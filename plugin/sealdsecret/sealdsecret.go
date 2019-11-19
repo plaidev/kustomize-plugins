@@ -18,7 +18,7 @@ type plugin struct {
 	types.SecretArgs
 }
 
-//noinspection GoUnusedGlobalVariable
+//KustomizePlugin is plubin variable
 var KustomizePlugin plugin
 
 func (p *plugin) Config(h *resmap.PluginHelpers, config []byte) (err error) {

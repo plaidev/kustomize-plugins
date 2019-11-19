@@ -1,2 +1,8 @@
+MAKEFILE_DIR := $(shell pwd)
+
+test:
+	cd ./plugin/sealdsecretgenerator; XDG_CONFIG_HOME=$(MAKEFILE_DIR); go test;
+
 build:
-	cd ./plugin/sealdsecret; go build -buildmode plugin -o ../../bin/sealdsecret ./sealdsecret.go
+	make test
+	cd ./plugin/sealdsecretgenerator; XDG_CONFIG_HOME=$(MAKEFILE_DIR); go build -buildmode plugin -o ../../bin/sealdsecretgenerator ./SealdSecretGenerator.go

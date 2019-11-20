@@ -60,12 +60,6 @@ func (p *plugin) Config(h *resmap.PluginHelpers, config []byte) (err error) {
 	return
 }
 
-// func (p *plugin) Generate() (resmap.ResMap, error) {
-// 	return p.h.ResmapFactory().FromSecretArgs(
-// 		kv.NewLoader(p.h.Loader(), p.h.Validator()),
-// 		&p.GeneratorOptions, p.SealedSecretArgs)
-// }
-
 // Transform appends hash to generated resources.
 func (p *plugin) Transform(m resmap.ResMap) error {
 	for _, res := range m.Resources() {

@@ -16,12 +16,12 @@ func TestTransformer(t *testing.T) {
 	defer tc.Reset()
 
 	tc.BuildGoPlugin(
-		"v1", "", "SealedSecretTransformer")
+		"bitnami.com/v1alpha1", "", "SealedSecretTransformer")
 
 	th := kusttest_test.NewKustTestHarnessAllowPlugins(t, "/app")
 
 	rm := th.LoadAndRunTransformer(`
-apiVersion: v1
+apiVersion: bitnami.com/v1alpha1
 kind: SealedSecretTransformer
 metadata:
   name: hash
@@ -35,7 +35,7 @@ spec:
   encryptedData:
     dockerConfig: Aiueo
 ---
-apiVersion: v1
+apiVersion: bitnami.com/v1alpha1
 kind: SealedSecret
 metadata:
   name: mySealedSecret

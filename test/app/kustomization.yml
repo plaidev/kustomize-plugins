@@ -5,5 +5,8 @@ resources:
   - ./pod.yml
   - ./secret.yml
 
+transformers:
+  - ./transformer.yml
+  
 configurations:
   - ./kustomizeconfig/sealedsecret.yml

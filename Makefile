@@ -18,4 +18,4 @@ unit-test:
 test:
 	XDG_CONFIG_HOME=$(XDG_CONFIG_HOME) $(BIN_DIR)/kustomize build $(XDG_CONFIG_HOME)/app --enable_alpha_plugins
 
-.PHONY: unit-test test build
+.PHONY: setup build unit-test test

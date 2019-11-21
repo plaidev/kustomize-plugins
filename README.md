@@ -13,7 +13,8 @@
 ```
 $ git clone https://github.com/plaidev/kustomize-plugins.git
 $ make setup
-$ make build
+$ XDG_CONFIG_HOME=<PLUGIN_PATH> make build
+# $XDG_CONFIG_HOME/kustomize/plugin/bitnami.com/v1alpha1/sealedsecrettransformer/SealedSecretTransformer.so will be made
 ```
 
 ### test

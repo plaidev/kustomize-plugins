@@ -12,6 +12,7 @@
 
 ```
 $ make setup
+$ make build
 ```
 
 ### test

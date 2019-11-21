@@ -45,7 +45,6 @@ type plugin struct {
 var KustomizePlugin plugin
 
 func (p *plugin) Config(h *resmap.PluginHelpers, config []byte) (err error) {
-	fmt.Println("helloo")
 	p.GeneratorOptions = types.GeneratorOptions{}
 	p.SealedSecretArgs = SealedSecretArgs{}
 	err = yaml.Unmarshal(config, p)
@@ -63,7 +62,6 @@ func (p *plugin) Config(h *resmap.PluginHelpers, config []byte) (err error) {
 // Transform appends hash to generated resources.
 func (p *plugin) Transform(m resmap.ResMap) error {
 	for _, res := range m.Resources() {
-		// if res.NeedHashSuffix() {
 		u := unstructured.Unstructured{
 			Object: res.Map(),
 		}
@@ -79,7 +77,6 @@ func (p *plugin) Transform(m resmap.ResMap) error {
 			}
 			res.SetName(fmt.Sprintf("%s-%s", res.GetName(), h))
 		}
-		// }
 	}
 	return nil
 }

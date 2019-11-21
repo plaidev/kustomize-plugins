@@ -11,6 +11,7 @@
 ### installation
 
 ```
+$ git clone https://github.com/plaidev/kustomize-plugins.git
 $ make setup
 $ make build
 ```

@@ -19,7 +19,7 @@ more details about this.
 
 ### installation
 
-```
+```sh
 $ git clone https://github.com/plaidev/kustomize-plugins.git
 $ make setup
 $ XDG_CONFIG_HOME=<PLUGIN_PATH> make build

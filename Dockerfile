@@ -4,10 +4,9 @@ WORKDIR /usr/app/
 RUN apk add curl git make bash gcc musl-dev
 
 # install kustomzie and sealed secret transformer
-COPY . .
+COPY . ./kustomize-plugins
 ENV XDG_CONFIG_HOME=/usr/app/
-RUN git clone https://github.com/plaidev/kustomize-plugins.git \
-    && cd kustomize-plugins \
+RUN cd kustomize-plugins \
     && make setup \
     && XDG_CONFIG_HOME=$XDG_CONFIG_HOME make build \
     && mv ./bin/kustomize /usr/local/bin/kustomize

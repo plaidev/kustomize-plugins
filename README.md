@@ -1,5 +1,9 @@
 # kustomize-plugins
 
+## docker
+
+- https://hub.docker.com/repository/docker/plaid/kustomize-plugins
+
 ## sealed secret transformer
 
 ### prerequisites

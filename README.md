@@ -30,6 +30,3 @@ $ XDG_CONFIG_HOME=<PLUGIN_PATH> make build
 
 - unit test: `make unit-test`
 - test: `make test`
-
-more details about this problem
-- 

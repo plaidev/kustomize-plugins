@@ -9,7 +9,7 @@ This plugins was developed in aims to restart pods when sealed secret are modifi
 
 more details about this.
 - https://kubernetes.slack.com/archives/CM0H415UG/p1574409839114400
-- https://github.com/plaidev/kustomize-plugins
+- https://github.com/bitnami-labs/sealed-secrets/issues/167
 
 ### prerequisites
 

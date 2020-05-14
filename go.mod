@@ -1,6 +1,6 @@
 module github.com/plaidev/kustomize-plugins
 
-go 1.13
+go 1.14
 
 require (
 	github.com/bitnami-labs/sealed-secrets v0.9.5 // indirect

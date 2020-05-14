@@ -13,7 +13,7 @@ more details about this.
 
 ### prerequisites
 
-- go 1.13.4
+- go 1.14.2
 - kustomize 3.4.0
 - sealed secret 0.9.5
 

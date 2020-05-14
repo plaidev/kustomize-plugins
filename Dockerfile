@@ -1,4 +1,4 @@
-FROM golang:1.13.4-alpine3.10
+FROM golang:1.14.2-alpine3.10
 WORKDIR /usr/app/
 
 RUN apk add curl git make bash gcc musl-dev

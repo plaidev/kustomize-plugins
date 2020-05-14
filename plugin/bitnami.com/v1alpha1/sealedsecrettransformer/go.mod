@@ -1,6 +1,6 @@
 module github.com/plaidev/kustomize-plugin/plugin/builtin/sealedsecrettransformer
 
-go 1.13
+go 1.14
 
 require (
 	sigs.k8s.io/kustomize/api v0.2.0

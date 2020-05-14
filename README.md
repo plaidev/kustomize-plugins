@@ -17,7 +17,7 @@ more details about this.
 
 - go 1.13.4
 - kustomize 3.4.0
-- sealed secret 0.9.5
+- sealed secrets 0.9.5
 
 ### installation
 

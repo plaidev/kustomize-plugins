@@ -5,9 +5,11 @@
 - https://hub.docker.com/r/plaid/kustomize-plugins
 
 ## sealed secret transformer
-This plugin was developed in aims to restart pods when sealed secret are modified. But this plugin won't work by default. Because sealed secret which metadata.name modified with `name-${hash}` cannot be decrypted bacause of the scope of sealed secret encryption. To make it work, you need to set sealed secret scope to `namespace-wide`. Before using this plugin, please consider the other options to restart pods when secret changed (e.g. https://github.com/stakater/Reloader). 
+
+This plugin was developed in aims to restart pods when sealed secret are modified. But this plugin won't work by default. Because sealed secret which metadata.name modified with `name-${hash}` cannot be decrypted bacause of the scope of sealed secret encryption. To make it work, you need to set sealed secret scope to `namespace-wide`. Before using this plugin, please consider the other options to restart pods when secret changed (e.g. https://github.com/stakater/Reloader).
 
 more details about this.
+
 - https://kubernetes.slack.com/archives/CM0H415UG/p1574409839114400
 - https://github.com/bitnami-labs/sealed-secrets/issues/167
 
